@@ -1,0 +1,32 @@
+
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
+<script type="text/javascript">	
+$(function(){
+    var c=0;
+    $("#b").click(function(){
+        $(this).stop().animate({left: ++c%2*1240 }, 'slow');
+    });  
+}); 
+</script>
+ 
+<style type="text/css">
+	div#b {
+  background:red;
+  padding:30px;
+  width:0px;
+  position:absolute;
+  left:0px;
+    
+}
+div#b:hover{
+    background:blue;
+}
+</style>
+</head>
+
+<body>
+<div id="b"></div>
+</body>
+</html>
